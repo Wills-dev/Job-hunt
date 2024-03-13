@@ -3,26 +3,10 @@ import { useCallback } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from "expo-splash-screen";
 
-// Keep the splash screen visible while we fetch resources
-SplashScreen.preventAutoHideAsync();
+//Keep the splash screen visible while we fetch resources
+// SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
-  // const [fontsLoaded] = useFonts({
-  //   DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
-  //   DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
-  //   DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
-  // });
-
-  // const onLayoutRootView = useCallback(async () => {
-  //   if (fontsLoaded) {
-  //     await SplashScreen.hideAsync();
-  //   }
-  // }, [fontsLoaded]);
-
-  // if (!fontsLoaded) return null;
-
-  //new one
-
   const [fontsLoaded, fontError] = useFonts({
     DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
     DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
